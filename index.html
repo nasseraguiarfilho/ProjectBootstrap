@@ -24,7 +24,7 @@
 
     <div class="container-fluid">
 
-      <a class="navbar-brand ms-2" href="javascript:void(0)">Logo</a>
+      <a class="navbar-brand ms-2" href="index.html">Logo</a>
 
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
 
@@ -39,18 +39,45 @@
   </nav>
 
 
+  <div class="container mt-3 bg-white rounded">
+    <!-- Create some tabs here -->
+  </div>
+
+
 
   <div class="container mt-3 bg-white rounded">
-    
 
-      <div class="col-sm">
-        <form class="d-flex justify-content-center" role="search">
-          <input class="form-control me-2 mt-3" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-success mt-3" type="submit">Search</button>
-        </form>
+    <div class="col-sm">
+      <form class="d-grip gap-2 d-md-flex justify-md-center" role="search">
+        <input class="form-control me-2 mt-3" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-primary mt-3" type="submit">Search</button>
+        <button id="btnGroupDrop1" type="button" class="btn btn-secondary dropdown-toggle mt-3" data-bs-toggle="dropdown"
+          aria-expanded="false">
+          Filter
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+          <li> <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Paid
+          </li>
+          <li> <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Payment Pending
+          </li>
 
-        
-      </div>
+          <li> <input class="form-check-input ms-2" type="checkbox" value="" id="flexCheckDefault">
+            <label class="form-check-label" for="flexCheckDefault">
+              Cancelled
+          </li>
+
+        </ul>
+      </form>
+
+      <span class="mt-2 mb-2 badge rounded-pill  bg-secondary text-light badge-dismissible">Payment Pending</span>
+      <span class="badge rounded-pill  bg-secondary text-light">Paid</span>
+      <span class="badge rounded-pill  bg-secondary text-light">Cancelled</span>
+
+    </div>
 
     <table class="table table-hover">
 
